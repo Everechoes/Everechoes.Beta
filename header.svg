@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap');
+
+      /* Animations */
+      @keyframes spinSlow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinReverse {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes pulseTri {
+        0%, 100% { opacity: 0.92; transform: translateY(0px) scale(1); }
+        50% { opacity: 1; transform: translateY(-3px) scale(1.02); }
+      }
+      @keyframes runeGlow {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.7; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(100%); }
+      }
+
+      .bg { fill: #F7EFE9; }
+      .bg-inner { fill: #FDF9F5; }
+      
+      .spin-ring {
+        transform-origin: 780px 100px;
+        animation: spinSlow 45s linear infinite;
+      }
+      .spin-ring-rev {
+        transform-origin: 780px 100px;
+        animation: spinReverse 30s linear infinite;
+      }
+      
+      .geo-tri {
+        animation: pulseTri 6s ease-in-out infinite alternate;
+      }
+      .rune-circ {
+        animation: runeGlow 4s ease-in-out infinite alternate;
+      }
+
+      /* Typography */
+      .font-cinzel { font-family: 'Cinzel', Georgia, serif; }
+      .font-playfair { font-family: 'Playfair Display', Georgia, serif; }
+      .font-mono { font-family: 'Space Mono', monospace; }
+      .font-sans { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; }
+
+      .dossier-tag {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        fill: #A85935;
+        text-transform: uppercase;
+      }
+      .title-intro {
+        font-size: 58px;
+        font-weight: 700;
+        fill: #221915;
+        letter-spacing: -0.5px;
+      }
+      .title-accent {
+        font-size: 64px;
+        font-weight: 700;
+        font-style: italic;
+        fill: #A85935;
+      }
+      .dossier-sub {
+        font-size: 15px;
+        font-weight: 600;
+        fill: #6E4935;
+        letter-spacing: 1px;
+      }
+      .dossier-body {
+        font-size: 14.5px;
+        line-height: 24px;
+        fill: #4A382D;
+      }
+      .afflatus-pill {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        fill: #FDF9F5;
+      }
+      .stamp-txt {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        fill: #A85935;
+        font-weight: 700;
+      }
+    </style>
+
+    <!-- Filters & Gradients -->
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C26B43"/>
+      <stop offset="100%" stop-color="#883B1B"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A85935"/>
+      <stop offset="50%" stop-color="#D9A07E"/>
+      <stop offset="100%" stop-color="#A85935"/>
+    </linearGradient>
+    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DFC9BC" opacity="0.45" />
+    </pattern>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="920" height="440" rx="16" class="bg" />
+  <rect x="12" y="12" width="896" height="416" rx="12" class="bg-inner" stroke="#E6D3C6" stroke-width="1.5" />
+  <rect x="12" y="12" width="896" height="416" rx="12" fill="url(#dotPattern)" />
+
+  <!-- Outer Editorial Borders & Corner Marks -->
+  <g stroke="#C8A590" stroke-width="1" opacity="0.6">
+    <line x1="28" y1="28" x2="60" y2="28" />
+    <line x1="28" y1="28" x2="28" y2="60" />
+    <line x1="892" y1="28" x2="860" y2="28" />
+    <line x1="892" y1="28" x2="892" y2="60" />
+    <line x1="28" y1="412" x2="60" y2="412" />
+    <line x1="28" y1="412" x2="28" y2="380" />
+    <line x1="892" y1="412" x2="860" y2="412" />
+    <line x1="892" y1="412" x2="892" y2="380" />
+  </g>
+
+  <!-- Background Animated Astrolabe / Chrono Dial -->
+  <g opacity="0.32">
+    <!-- Center of Dial: (780, 110) -->
+    <circle cx="780" cy="110" r="140" fill="none" stroke="#D9A990" stroke-width="1" stroke-dasharray="4,6" class="spin-ring" />
+    <circle cx="780" cy="110" r="115" fill="none" stroke="#A85935" stroke-width="1.2" class="spin-ring-rev" />
+    <circle cx="780" cy="110" r="85" fill="none" stroke="#D9A990" stroke-width="0.8" stroke-dasharray="2,4" class="spin-ring" />
+    <!-- Dial Crosshairs -->
+    <line x1="640" y1="110" x2="920" y2="110" stroke="#C8A590" stroke-width="0.8" stroke-dasharray="3,3" />
+    <line x1="780" y1="-30" x2="780" y2="250" stroke="#C8A590" stroke-width="0.8" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- Top-Right Geometric Triangles Mosaic (Reverse: 1999 Aesthetic) -->
+  <g id="top-triangles">
+    <!-- Row 0 -->
+    <polygon points="730,12 778,12 754,53" fill="#D2A289" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="778,12 754,53 802,53" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="778,12 826,12 802,53" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="826,12 802,53 850,53" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="826,12 874,12 850,53" fill="#A85935" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="874,12 850,53 898,53" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.3s;" />
+
+    <!-- Row 1 -->
+    <polygon points="730,53 706,94 754,94" fill="#A85935" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="730,53 778,53 754,94" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="778,53 754,94 802,94" fill="#D2A289" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="778,53 826,53 802,94" fill="#A85935" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="826,53 802,94 850,94" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="826,53 874,53 850,94" fill="#C68B70" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="874,53 850,94 898,94" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+
+    <!-- Row 2 -->
+    <polygon points="682,94 658,135 706,135" fill="#D2A289" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="682,94 730,94 706,135" fill="#A85935" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="730,94 706,135 754,135" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.9s;" />
+    <polygon points="730,94 778,94 754,135" fill="#C68B70" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="778,94 754,135 802,135" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="778,94 826,94 802,135" fill="#A85935" class="geo-tri" style="animation-delay: 0.3s;" />
+
+    <!-- Row 3 -->
+    <polygon points="682,135 730,135 706,176" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="730,135 706,176 754,176" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="730,135 778,135 754,176" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="778,135 754,176 802,176" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.3s;" />
+  </g>
+
+  <!-- Bottom-Left Geometric Triangles Cluster -->
+  <g id="bottom-triangles">
+    <polygon points="168,260 144,301 192,301" fill="#A85935" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="120,301 168,301 144,342" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="168,301 144,342 192,342" fill="#D2A289" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="168,301 216,301 192,342" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="72,342 48,383 96,383" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="72,342 120,342 96,383" fill="#C68B70" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="120,342 96,383 144,383" fill="#A85935" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="120,342 168,342 144,383" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="168,342 144,383 192,383" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="168,342 216,342 192,383" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="216,342 192,383 240,383" fill="#A85935" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="216,342 264,342 240,383" fill="#D2A289" class="geo-tri" style="animation-delay: 0.3s;" />
+
+    <polygon points="24,383 0,424 48,424" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="24,383 72,383 48,424" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="72,383 48,424 96,424" fill="#D2A289" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="72,383 120,383 96,424" fill="#A85935" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="120,383 96,424 144,424" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.9s;" />
+    <polygon points="120,383 168,383 144,424" fill="#C68B70" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="168,383 144,424 192,424" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="168,383 216,383 192,424" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="216,383 192,424 240,424" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="216,383 264,383 240,424" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+  </g>
+
+  <!-- Dossier Header Badges & Stamps -->
+  <g transform="translate(60, 52)">
+    <!-- Archive Header Strip -->
+    <rect x="0" y="0" width="170" height="22" rx="3" fill="#EBD9CE" />
+    <text x="12" y="15" class="font-mono dossier-tag">ARCHIVE // FILE 001</text>
+
+    <!-- Star Rating / Arcanist Rarity -->
+    <text x="185" y="16" font-size="14" fill="#A85935">✦ ✦ ✦ ✦ ✦ ✦</text>
+
+    <!-- Status badge -->
+    <rect x="300" y="0" width="105" height="22" rx="3" fill="#A85935" />
+    <text x="312" y="15" class="font-mono afflatus-pill">ACTIVE DEV</text>
+  </g>
+
+  <!-- Main Editorial Title & Narrative -->
+  <g transform="translate(60, 110)">
+    <!-- Sub-heading -->
+    <text x="0" y="24" class="font-cinzel dossier-sub">Software Engineering Student · Web Developer</text>
+
+    <!-- Big Headline: Intro to Everechoes -->
+    <text x="0" y="82">
+      <tspan class="font-playfair title-intro">Intro to </tspan>
+      <tspan class="font-playfair title-accent">Everechoes</tspan>
+    </text>
+
+    <!-- Divider ornament -->
+    <path d="M 0 102 L 320 102" stroke="url(#goldAccent)" stroke-width="2" />
+    <polygon points="325,102 331,98 337,102 331,106" fill="#A85935" />
+
+    <!-- Editorial Description Paragraph -->
+    <text x="0" y="132" class="font-playfair dossier-body">
+      <tspan x="0" dy="0">A specialized arcanist record of a Software Engineering student at SMK Telkom</tspan>
+      <tspan x="0" dy="25">Banjarbaru, dedicated to weaving interactive digital platforms into visual existence.</tspan>
+      <tspan x="0" dy="25">Specializing in Web Development, UI/UX Craftsmanship, and Full-Stack Architecture.</tspan>
+    </text>
+
+    <!-- Signature Mark -->
+    <text x="0" y="224" class="font-playfair" font-size="16" font-style="italic" fill="#A85935" font-weight="700">
+      — E.E. · Arcanist of Digital Echoes
+    </text>
+  </g>
+
+  <!-- Right-side Seal & Stamp (Timekeeper Style) -->
+  <g transform="translate(730, 310)">
+    <!-- Outer dashed circle stamp -->
+    <circle cx="50" cy="50" r="44" fill="none" stroke="#A85935" stroke-width="1.5" stroke-dasharray="4,3" class="rune-circ" />
+    <circle cx="50" cy="50" r="38" fill="none" stroke="#C8A590" stroke-width="0.8" />
+    <!-- Center text stamp -->
+    <text x="50" y="44" text-anchor="middle" class="font-cinzel stamp-txt">GENESIS</text>
+    <text x="50" y="58" text-anchor="middle" class="font-mono" font-size="12" font-weight="700" fill="#221915">EST.2024</text>
+    <text x="50" y="70" text-anchor="middle" class="font-cinzel" font-size="8" fill="#A85935">VERIFIED</text>
+  </g>
+</svg>
+

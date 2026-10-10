@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 250" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;1,600&amp;family=Space+Mono:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+
+      .bg { fill: #F7EFE9; }
+      .bg-inner { fill: #FDF9F5; }
+      
+      .font-cinzel { font-family: 'Cinzel', Georgia, serif; }
+      .font-playfair { font-family: 'Playfair Display', Georgia, serif; }
+      .font-mono { font-family: 'Space Mono', monospace; }
+      .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+      .card-box {
+        fill: #FAF3EC;
+        stroke: #E6D3C6;
+        stroke-width: 1.2;
+        rx: 10px;
+        transition: all 0.3s ease;
+      }
+      .card-box:hover {
+        stroke: #A85935;
+      }
+      
+      .pill-badge {
+        fill: #F4E7DC;
+        stroke: #DEBEA9;
+        stroke-width: 0.8;
+        rx: 6px;
+      }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="920" height="250" rx="14" class="bg" />
+  <rect x="10" y="10" width="900" height="230" rx="10" class="bg-inner" stroke="#E6D3C6" stroke-width="1.2" />
+
+  <!-- Section Header -->
+  <g transform="translate(36, 32)">
+    <rect x="0" y="0" width="180" height="22" rx="3" fill="#7B3C20" />
+    <text x="12" y="15" class="font-mono" font-size="11" font-weight="700" fill="#FDF9F5" letter-spacing="2px">
+      SPELLCRAFT &amp; TOOLS
+    </text>
+    <text x="195" y="16" class="font-cinzel" font-size="12" font-weight="700" fill="#A85935" letter-spacing="1.5px">
+      INCANTATION INVENTORY
+    </text>
+  </g>
+
+  <!-- 4 Categories Tablets -->
+  <g transform="translate(36, 70)">
+    <!-- Column 1: FRONTEND -->
+    <g transform="translate(0, 0)">
+      <rect width="200" height="150" class="card-box" />
+      <rect x="12" y="14" width="6" height="14" fill="#A85935" rx="2" />
+      <text x="26" y="26" class="font-cinzel" font-size="12" font-weight="700" fill="#221915">FRONTEND</text>
+      
+      <!-- Badges -->
+      <g transform="translate(14, 44)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ HTML</text>
+      </g>
+      <g transform="translate(14, 76)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ CSS</text>
+      </g>
+      <g transform="translate(14, 108)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ JAVASCRIPT</text>
+      </g>
+    </g>
+
+    <!-- Column 2: BACKEND -->
+    <g transform="translate(216, 0)">
+      <rect width="200" height="150" class="card-box" />
+      <rect x="12" y="14" width="6" height="14" fill="#A85935" rx="2" />
+      <text x="26" y="26" class="font-cinzel" font-size="12" font-weight="700" fill="#221915">BACKEND</text>
+      
+      <g transform="translate(14, 52)">
+        <rect width="172" height="30" class="pill-badge" />
+        <text x="12" y="19" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ PHP</text>
+      </g>
+      <g transform="translate(14, 94)">
+        <rect width="172" height="30" class="pill-badge" />
+        <text x="12" y="19" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ LARAGON</text>
+      </g>
+    </g>
+
+    <!-- Column 3: DATABASE -->
+    <g transform="translate(432, 0)">
+      <rect width="200" height="150" class="card-box" />
+      <rect x="12" y="14" width="6" height="14" fill="#A85935" rx="2" />
+      <text x="26" y="26" class="font-cinzel" font-size="12" font-weight="700" fill="#221915">DATABASE</text>
+      
+      <g transform="translate(14, 72)">
+        <rect width="172" height="34" class="pill-badge" />
+        <text x="12" y="22" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ MYSQL</text>
+      </g>
+    </g>
+
+    <!-- Column 4: TOOLS & DESIGN -->
+    <g transform="translate(648, 0)">
+      <rect width="200" height="150" class="card-box" />
+      <rect x="12" y="14" width="6" height="14" fill="#A85935" rx="2" />
+      <text x="26" y="26" class="font-cinzel" font-size="12" font-weight="700" fill="#221915">TOOLS &amp; DESIGN</text>
+      
+      <g transform="translate(14, 44)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ FIGMA</text>
+      </g>
+      <g transform="translate(14, 76)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ GIT</text>
+      </g>
+      <g transform="translate(14, 108)">
+        <rect width="172" height="26" class="pill-badge" />
+        <text x="12" y="17" class="font-sans" font-size="12" font-weight="700" fill="#A85935">✦ GITHUB</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Space+Mono:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+
+      .bg { fill: #F7EFE9; }
+      .bg-inner { fill: #FDF9F5; }
+      
+      .font-cinzel { font-family: 'Cinzel', Georgia, serif; }
+      .font-playfair { font-family: 'Playfair Display', Georgia, serif; }
+      .font-mono { font-family: 'Space Mono', monospace; }
+      .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+      @keyframes barLoad {
+        from { width: 0; }
+      }
+      @keyframes floatShimmer {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; }
+      }
+
+      .bar-fill {
+        animation: barLoad 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+    
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C26B43" />
+      <stop offset="100%" stop-color="#7B3C20" />
+    </linearGradient>
+
+    <pattern id="cardDots" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#E6D3C6" opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <!-- Background Container -->
+  <rect width="920" height="320" rx="14" class="bg" />
+  <rect x="10" y="10" width="900" height="300" rx="10" class="bg-inner" stroke="#E6D3C6" stroke-width="1.2" />
+  <rect x="10" y="10" width="900" height="300" rx="10" fill="url(#cardDots)" />
+
+  <!-- Corner Ornamental Marks -->
+  <g stroke="#A85935" stroke-width="1" opacity="0.7">
+    <path d="M 24 36 L 24 24 L 36 24" fill="none" />
+    <path d="M 896 36 L 896 24 L 884 24" fill="none" />
+    <path d="M 24 284 L 24 296 L 36 296" fill="none" />
+    <path d="M 896 284 L 896 296 L 884 296" fill="none" />
+  </g>
+
+  <!-- Card Top Banner Label -->
+  <g transform="translate(36, 32)">
+    <rect x="0" y="0" width="220" height="24" rx="3" fill="#A85935" />
+    <text x="14" y="16" class="font-mono" font-size="11" font-weight="700" fill="#FDF9F5" letter-spacing="2px">
+      DOSSIER // ARCANIST PROFILE
+    </text>
+    <text x="240" y="17" class="font-cinzel" font-size="13" font-weight="700" fill="#221915" letter-spacing="1.5px">
+      SPECIMEN SPECIFICATION · NO. 1999-EE
+    </text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="36" y1="68" x2="884" y2="68" stroke="#E6D3C6" stroke-width="1" />
+
+  <!-- LEFT COLUMN: Identity & Lore Attributes -->
+  <g transform="translate(42, 92)">
+    <!-- Row 1: Afflatus -->
+    <text x="0" y="20" class="font-mono" font-size="11" font-weight="700" fill="#A85935" letter-spacing="1.5px">AFFLATUS</text>
+    <text x="130" y="20" class="font-playfair" font-size="15" font-weight="700" fill="#221915">
+      Intellect <tspan font-style="italic" fill="#A85935">/ Genesis Code</tspan>
+    </text>
+
+    <!-- Row 2: Medium & Tooling -->
+    <text x="0" y="55" class="font-mono" font-size="11" font-weight="700" fill="#A85935" letter-spacing="1.5px">MEDIUM</text>
+    <text x="130" y="55" class="font-sans" font-size="13.5" font-weight="600" fill="#4A382D">
+      Digital Screen &amp; Mechanical Keystrokes
+    </text>
+
+    <!-- Row 3: Origin / Academy -->
+    <text x="0" y="90" class="font-mono" font-size="11" font-weight="700" fill="#A85935" letter-spacing="1.5px">ACADEMY</text>
+    <text x="130" y="90" class="font-sans" font-size="13.5" font-weight="600" fill="#4A382D">
+      SMK Telkom Banjarbaru (RPL)
+    </text>
+
+    <!-- Row 4: Core Style -->
+    <text x="0" y="125" class="font-mono" font-size="11" font-weight="700" fill="#A85935" letter-spacing="1.5px">SPECIALTY</text>
+    <text x="130" y="125" class="font-sans" font-size="13.5" font-weight="600" fill="#4A382D">
+      Full-Stack Engineering &amp; UI/UX Craft
+    </text>
+
+    <!-- Row 5: Passive Trait -->
+    <text x="0" y="160" class="font-mono" font-size="11" font-weight="700" fill="#A85935" letter-spacing="1.5px">PASSIVE</text>
+    <text x="130" y="160" class="font-playfair" font-size="14" font-style="italic" fill="#7B3C20">
+      "Perpetual Curiosity — Mind always bursting with ideas"
+    </text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="490" y1="82" x2="490" y2="280" stroke="#E6D3C6" stroke-width="1" stroke-dasharray="3,3" />
+
+  <!-- RIGHT COLUMN: Aptitude & Mastery Meters -->
+  <g transform="translate(520, 92)">
+    <text x="0" y="10" class="font-cinzel" font-size="12" font-weight="700" fill="#A85935" letter-spacing="2px">
+      ARCANUM APTITUDE METRICS
+    </text>
+
+    <!-- Stat 1: UI/UX Craftsmanship -->
+    <g transform="translate(0, 32)">
+      <text x="0" y="12" class="font-sans" font-size="13" font-weight="600" fill="#221915">UI/UX Design &amp; Aesthetics</text>
+      <text x="350" y="12" text-anchor="end" class="font-mono" font-size="12" font-weight="700" fill="#A85935">92%</text>
+      <rect x="0" y="20" width="350" height="8" rx="4" fill="#EAD7CB" />
+      <rect x="0" y="20" width="322" height="8" rx="4" fill="url(#barGrad)" class="bar-fill" />
+    </g>
+
+    <!-- Stat 2: Frontend Engineering -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="12" class="font-sans" font-size="13" font-weight="600" fill="#221915">Frontend Interactive Dev</text>
+      <text x="350" y="12" text-anchor="end" class="font-mono" font-size="12" font-weight="700" fill="#A85935">90%</text>
+      <rect x="0" y="20" width="350" height="8" rx="4" fill="#EAD7CB" />
+      <rect x="0" y="20" width="315" height="8" rx="4" fill="url(#barGrad)" class="bar-fill" />
+    </g>
+
+    <!-- Stat 3: Backend & Logic -->
+    <g transform="translate(0, 112)">
+      <text x="0" y="12" class="font-sans" font-size="13" font-weight="600" fill="#221915">Backend Logic Architecture</text>
+      <text x="350" y="12" text-anchor="end" class="font-mono" font-size="12" font-weight="700" fill="#A85935">84%</text>
+      <rect x="0" y="20" width="350" height="8" rx="4" fill="#EAD7CB" />
+      <rect x="0" y="20" width="294" height="8" rx="4" fill="url(#barGrad)" class="bar-fill" />
+    </g>
+
+    <!-- Stat 4: Database & Schema -->
+    <g transform="translate(0, 152)">
+      <text x="0" y="12" class="font-sans" font-size="13" font-weight="600" fill="#221915">Database &amp; Data Alchemy</text>
+      <text x="350" y="12" text-anchor="end" class="font-mono" font-size="12" font-weight="700" fill="#A85935">80%</text>
+      <rect x="0" y="20" width="350" height="8" rx="4" fill="#EAD7CB" />
+      <rect x="0" y="20" width="280" height="8" rx="4" fill="url(#barGrad)" class="bar-fill" />
+    </g>
+  </g>
+</svg>
+
