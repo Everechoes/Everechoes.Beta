@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap');
+      
+      .bg {
+        fill: #F8F1EB;
+      }
+      
+      .geo-tri {
+        opacity: 0.92;
+        transition: transform 0.3s ease;
+        animation: floatShift 6s ease-in-out infinite alternate;
+      }
+      
+      @keyframes floatShift {
+        0% {
+          opacity: 0.88;
+          transform: translateY(0px);
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.92;
+          transform: translateY(-2.5px);
+        }
+      }
+      
+      .title-intro {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 56px;
+        font-weight: 700;
+        fill: #221915;
+        letter-spacing: -0.5px;
+      }
+      
+      .title-accent {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-style: italic;
+        font-size: 60px;
+        font-weight: 700;
+        fill: #A85935;
+      }
+      
+      .desc-text {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 15.5px;
+        fill: #4A382D;
+        letter-spacing: 0.2px;
+      }
+      
+      .signature {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 16px;
+        font-style: italic;
+        fill: #A85935;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="900" height="420" rx="16" class="bg" stroke="#EBD9CE" stroke-width="1.5" />
+
+  <!-- Top-Right Geometric Triangles Cluster -->
+  <g id="top-right-triangles">
+    <!-- Row 0 -->
+    <polygon points="728,0 776,0 752,41.6" fill="#D2A289" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="776,0 752,41.6 800,41.6" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="776,0 824,0 800,41.6" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="824,0 800,41.6 848,41.6" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="824,0 872,0 848,41.6" fill="#A85935" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="872,0 848,41.6 896,41.6" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.3s;" />
+
+    <!-- Row 1 -->
+    <polygon points="728,41.6 704,83.1 752,83.1" fill="#A85935" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="728,41.6 776,41.6 752,83.1" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="776,41.6 752,83.1 800,83.1" fill="#D2A289" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="776,41.6 824,41.6 800,83.1" fill="#A85935" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="824,41.6 800,83.1 848,83.1" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="824,41.6 872,41.6 848,83.1" fill="#C68B70" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="872,41.6 848,83.1 896,83.1" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+
+    <!-- Row 2 -->
+    <polygon points="680,83.1 656,124.7 704,124.7" fill="#D2A289" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="680,83.1 728,83.1 704,124.7" fill="#A85935" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="728,83.1 704,124.7 752,124.7" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.9s;" />
+    <polygon points="728,83.1 776,83.1 752,124.7" fill="#C68B70" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="776,83.1 752,124.7 800,124.7" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="776,83.1 824,83.1 800,124.7" fill="#A85935" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="824,83.1 800,124.7 848,124.7" fill="#D2A289" class="geo-tri" style="animation-delay: 0.6s;" />
+
+    <!-- Row 3 -->
+    <polygon points="680,124.7 728,124.7 704,166.3" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="728,124.7 704,166.3 752,166.3" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="728,124.7 776,124.7 752,166.3" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="776,124.7 752,166.3 800,166.3" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="776,124.7 824,124.7 800,166.3" fill="#D2A289" class="geo-tri" style="animation-delay: 0.7s;" />
+
+    <!-- Row 4 -->
+    <polygon points="728,166.3 776,166.3 752,207.8" fill="#A85935" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="776,166.3 752,207.8 800,207.8" fill="#C68B70" class="geo-tri" style="animation-delay: 0.2s;" />
+  </g>
+
+  <!-- Bottom-Left Geometric Triangles Cluster -->
+  <g id="bottom-left-triangles">
+    <!-- Row 0 -->
+    <polygon points="168,253.7 144,295.3 192,295.3" fill="#A85935" class="geo-tri" style="animation-delay: 0.4s;" />
+
+    <!-- Row 1 -->
+    <polygon points="120,295.3 168,295.3 144,336.8" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="168,295.3 144,336.8 192,336.8" fill="#D2A289" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="168,295.3 216,295.3 192,336.8" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+
+    <!-- Row 2 -->
+    <polygon points="72,336.8 48,378.4 96,378.4" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="72,336.8 120,336.8 96,378.4" fill="#C68B70" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="120,336.8 96,378.4 144,378.4" fill="#A85935" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="120,336.8 168,336.8 144,378.4" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="168,336.8 144,378.4 192,378.4" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.8s;" />
+    <polygon points="168,336.8 216,336.8 192,378.4" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="216,336.8 192,378.4 240,378.4" fill="#A85935" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="216,336.8 264,336.8 240,378.4" fill="#D2A289" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="264,336.8 240,378.4 288,378.4" fill="#C68B70" class="geo-tri" style="animation-delay: 0.5s;" />
+
+    <!-- Row 3 -->
+    <polygon points="-24,378.4 24,378.4 0,420" fill="#D2A289" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="24,378.4 0,420 48,420" fill="#A85935" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="24,378.4 72,378.4 48,420" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.5s;" />
+    <polygon points="72,378.4 48,420 96,420" fill="#D2A289" class="geo-tri" style="animation-delay: 0.7s;" />
+    <polygon points="72,378.4 120,378.4 96,420" fill="#A85935" class="geo-tri" style="animation-delay: 0.2s;" />
+    <polygon points="120,378.4 96,420 144,420" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.9s;" />
+    <polygon points="120,378.4 168,378.4 144,420" fill="#C68B70" class="geo-tri" style="animation-delay: 0.3s;" />
+    <polygon points="168,378.4 144,420 192,420" fill="#E7C8B6" class="geo-tri" style="animation-delay: 0.6s;" />
+    <polygon points="168,378.4 216,378.4 192,420" fill="#D2A289" class="geo-tri" style="animation-delay: 0.4s;" />
+    <polygon points="216,378.4 192,420 240,420" fill="#7B3C20" class="geo-tri" style="animation-delay: 0.1s;" />
+    <polygon points="216,378.4 264,378.4 240,420" fill="#A85935" class="geo-tri" style="animation-delay: 0.5s;" />
+  </g>
+
+  <!-- Editorial Typography (Reverse: 1999 Afflatus Theory Style) -->
+  <g transform="translate(65, 175)">
+    <!-- Main Title -->
+    <text x="0" y="0">
+      <tspan class="title-intro">Intro to </tspan>
+      <tspan class="title-accent">Everechoes</tspan>
+    </text>
+    
+    <!-- Description paragraph matching font and layout of the image -->
+    <text x="0" y="38" class="desc-text">
+      <tspan x="0" dy="0">A brief introduction to Everechoes: Software Engineering student at SMK Telkom</tspan>
+      <tspan x="0" dy="25">Banjarbaru, focusing on Web Development, UI/UX Design, and Full-Stack.</tspan>
+    </text>
+    
+    <!-- Signature - A.D. style -->
+    <text x="0" y="105" class="signature">— E.E.</text>
+  </g>
+</svg>
+
